@@ -310,6 +310,8 @@ call s:h("typescriptTypeParameter",       { "fg": s:purple, "format": "italic" }
 call s:h("typescriptOptionalMark",        { "fg": s:pink })
 call s:h("tsxAttrib",                     { "fg": s:green })
 call s:h("tsxTagName",                    { "fg": s:pink })
+call s:h("tsxCloseTagName",               { "fg": s:pink })
+call s:h("tsxCloseComponentName",         { "fg": s:pink })
 
 " Dart
 call s:h("dartStorageClass",    { "fg": s:pink })
