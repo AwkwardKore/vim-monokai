@@ -162,7 +162,7 @@ call s:h("FoldColumn",    {                     "bg": s:darkblack })
 "        Incsearch"
 
 " popup menu
-call s:h("Pmenu",         { "fg": s:white2,     "bg": s:lightblack3 })
+call s:h("Pmenu",         { "fg": s:white2,     "bg": s:lightgrey })
 call s:h("PmenuSel",      { "fg": s:aqua,       "bg": s:lightblack3,        "format": "reverse,bold" })
 call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:grey })
 "        PmenuSbar"
@@ -237,6 +237,7 @@ call s:h("SyntasticWarningSign",    { "fg": s:lightblack, "bg": s:orange })
 " ---
 
 hi! link CocErrorSign Error
+call s:h("CocErrorSign",            { "fg": s:purered, "bg": s:lightblack })
 call s:h("CocErrorHighlight",       { "fg": s:red, "format": "underline" })
 call s:h("CocErrorFloat",           { "fg": s:purered, "bg": s:lightblack3 })
 
@@ -244,11 +245,13 @@ call s:h("CocWarningSign",          { "fg": s:orange, "bg": s:lightblack })
 call s:h("CocWarningHighlight",     { "format": "underline" })
 call s:h("CocWarningFloat",         { "fg": s:orange, "bg": s:lightblack3 })
 
-call s:h("CocInfoSign",             { "fg": s:yellow, "bg": s:lightblack3 })
+call s:h("CocInfoSign",             { "fg": s:yellow, "bg": s:lightblack })
 call s:h("CocInfoHighlight",        { "format": "underline" })
 
-call s:h("CocHintSign",             { "fg": s:white, "bg": s:lightblack3 })
+call s:h("CocHintSign",             { "fg": s:yellow, "bg": s:lightblack })
 call s:h("CocHintHighlight",        { "format": "underline" })
+
+call s:h("CocUnusedHighlight",      { "fg": s:orange, "format": "underline" })
 
 " Language highlight
 " ------------------
